@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MissionaryComponent } from './missionary/missionary.component';
 import { MissionaryConfigComponent } from './missionary-config/missionary-config.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MissionaryComponent,
-    MissionaryConfigComponent
+    MissionaryConfigComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
