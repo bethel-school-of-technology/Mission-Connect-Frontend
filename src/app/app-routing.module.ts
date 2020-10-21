@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { SearchResultsComponent } from './search-results/search-results.component';
+import { MissionaryDbComponent } from './modules/missionaries/missionary-db/missionary-db.component';
 import { StatementComponent } from './statement/statement.component';
 
 const routes: Routes = [
@@ -15,7 +15,7 @@ const routes: Routes = [
       },
       {
         path: 'results', 
-        component: SearchResultsComponent
+        component: MissionaryDbComponent
       },
       {
         path: '',

@@ -1,12 +1,5 @@
-import { Injectable } from '@angular/core';
-
-import { Missionary } from '../models/missionary';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class MissionaryService {
-  missionaries: Missionary[] = [
+{
+  "missionaries": [
     {
       "_id": 1,
       "profilePic": "../../assets/images/profilePics/01/missionary01.jpg",
@@ -22,7 +15,7 @@ export class MissionaryService {
       "continent": "Africa",
       "country": "Zambia",
       "bio": "Lorem Ipsum"
-    }, 
+    },
     {
       "_id": 3,
       "profilePic": "../../assets/images/profilePics/03/missionary03.jpg",
@@ -30,7 +23,7 @@ export class MissionaryService {
       "continent": "Africa",
       "country": "Mozambique",
       "bio": "Lorem Ipsum"
-    }, 
+    },
     {
       "_id": 4,
       "profilePic": "../../assets/images/profilePics/04/missionary04.jpg",
@@ -38,7 +31,7 @@ export class MissionaryService {
       "continent": "Asia",
       "country": "Syria",
       "bio": "Lorem Ipsum"
-    }, 
+    },
     {
       "_id": 5,
       "profilePic": "../../assets/images/profilePics/05/missionary05.jpg",
@@ -46,7 +39,7 @@ export class MissionaryService {
       "continent": "Middle East",
       "country": "Israel",
       "bio": "Lorem Ipsum"
-    }, 
+    },
     {
       "_id": 6,
       "profilePic": "../../assets/images/profilePics/06/missionary06.jpg",
@@ -54,7 +47,7 @@ export class MissionaryService {
       "continent": "Asia",
       "country": "Vietnam",
       "bio": "Lorem Ipsum"
-    }, 
+    },
     {
       "_id": 7,
       "profilePic": "../../assets/images/profilePics/07/missionary07.jpg",
@@ -62,21 +55,23 @@ export class MissionaryService {
       "continent": "Africa",
       "country": "Sudan",
       "bio": "Lorem Ipsum"
-    }, {
+    },
+    {
       "_id": 8,
       "profilePic": "../../assets/images/profilePics/08/missionary08.jpg",
       "name": "Hamish and Corrine McFadden",
       "continent": "Middle East",
       "country": "Iraq",
       "bio": "Lorem Ipsum"
-    }, {
+    },
+    {
       "_id": 9,
       "profilePic": "../../assets/images/profilePics/09/missionary09.jpg",
       "name": "Matt and Josephine Hurley",
       "continent": "Asia",
       "country": "Russia",
       "bio": "Lorem Ipsum"
-    }, 
+    },
     {
       "_id": 10,
       "profilePic": "../../assets/images/profilePics/10/missionary10  .jpg",
@@ -85,6 +80,5 @@ export class MissionaryService {
       "country": "Ethiopia",
       "bio": "Lorem Ipsum"
     }
-  ];
-    constructor() { }
+  ]
 }
