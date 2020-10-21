@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Missionary } from '../../../models/missionary';
+import { Missionary } from '../../../../models/missionary';
 
 
 @Component({
