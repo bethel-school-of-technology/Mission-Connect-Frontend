@@ -11,7 +11,7 @@ import { Missionary } from '../../../../models/missionary';
 })
 export class MissionaryDbComponent implements OnInit {
 
-  private missionariesRoute = "http://localhost:3000/missionaries";
+  private missionariesRoute = "http://localhost:3000/missionaries/get-missionaries";
   public missionaries: Missionary[];
 
   constructor(private http: HttpClient) {}
