@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { StatementComponent } from './statement/statement.component';
 import { MissionariesModule } from './modules/missionaries/missionaries.module';
+import { ResultsComponent } from './modules/missionaries/components/results/results.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    StatementComponent
+    StatementComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,
