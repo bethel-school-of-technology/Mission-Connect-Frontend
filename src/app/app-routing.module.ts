@@ -29,7 +29,7 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'missionary',
+    path: 'missionary/:id',
     component: MissionaryComponent
   },
   {
