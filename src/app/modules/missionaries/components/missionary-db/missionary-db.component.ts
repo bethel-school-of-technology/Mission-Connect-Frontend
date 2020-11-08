@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
 import { Missionary } from '../../../../models/missionary';
+import { SearchService } from '../../../../service/search.service';
 
 
 @Component({
@@ -11,19 +10,17 @@ import { Missionary } from '../../../../models/missionary';
 })
 export class MissionaryDbComponent implements OnInit {
 
-  private missionariesRoute = "http://localhost:3000/missionaries/get-missionaries";
-  public missionaries: Missionary[];
+  missionaries: Missionary[];
 
-  constructor(private http: HttpClient) {}
+ constructor(private searchService: SearchService) {}
 
-  getMissionaries() {
-    this.http.get<Missionary[]>(this.missionariesRoute).subscribe(missionaries => {
-      this.missionaries = missionaries;
-    })
-  }
+  
 
   ngOnInit(): void {
-    this.getMissionaries();
+    this.searchService.getMissionaries().subscribe(
+      (missionaries) => this.missionaries = missionaries,
+      (err) => console.log(err)
+    );
   }
 
 }
