@@ -4,6 +4,7 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { Missionary } from '../models/missionary';
 import { SearchService } from '../service/search.service'
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -301,5 +302,6 @@ export class HomeComponent implements OnInit {
     console.log(this.searchForm.value);
   }
 }
+
 
 

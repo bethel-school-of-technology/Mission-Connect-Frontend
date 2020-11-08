@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Missions-Connect"
+    }
+  },
+  "defaultProject": "Missions-Connect",
+  "cli": {
+    "analytics": false
+  }
 }

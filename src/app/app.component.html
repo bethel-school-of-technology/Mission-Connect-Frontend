@@ -1,1 +1,18 @@
-<router-outlet></router-outlet>
+<div class="container-fluid m-0 p-0">
+  <div class="header d-flex justify-content-center flex-column">
+    <div class="align-self-center text-center">
+      <h1>{{title}}</h1>
+      <p>A place to connect with missionaries around the world</p>
+    </div>
+    <div id="header">
+      <nav>
+        <a class='btn' routerLink='home' routerLinkActive='active'>Home</a>
+        <a class='btn' routerLink='missionary' routerLinkActive='active'>Missionary</a>
+        <a class='btn' routerLink='addnew' routerLinkActive='active'>Add New Missionary</a>
+      </nav>
+    </div>
+  </div>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
