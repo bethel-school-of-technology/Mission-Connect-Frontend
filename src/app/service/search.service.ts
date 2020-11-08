@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Missionary } from '../models/missionary';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
