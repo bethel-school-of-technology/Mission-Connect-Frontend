@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Missionary } from '../../../../models/missionary';
+import { SearchService } from '../../../../service/search.service';
+import { ActivatedRoute } from '@angular/router'; 
 
 @Component({
   selector: 'app-results',
@@ -8,20 +8,24 @@ import { Missionary } from '../../../../models/missionary';
   styleUrls: ['./results.component.css']
 })
 export class ResultsComponent implements OnInit {
+  missionary: string;
+  missionaries;
 
-  private resultsRoute = "http://localhost:3000/missionaries/search-results";
-  public missionaries: Missionary[];
+  constructor(private searchService: SearchService, private route: ActivatedRoute) { }
 
-  constructor(private http: HttpClient) { }
-
-  getMissionaries() {
-    this.http.get<Missionary[]>(this.resultsRoute).subscribe(missionaries => {
-      this.missionaries = missionaries;
-    })
+  searchMissionaries() {
+    this.searchService.searchMissionaries()
+    .subscribe(missionaries => 
+      this.missionaries = missionaries
+    );
   }
 
   ngOnInit(): void {
-    this.getMissionaries();
+    //  this.route.queryParams
+    //   .filter(missionaries => missionaries)
+    //   .subscribe(params => {
+    //     console.log(params;)
+    //   });
   }
 
 }
