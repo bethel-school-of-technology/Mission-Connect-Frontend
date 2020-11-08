@@ -12,7 +12,6 @@ import { MissionariesModule } from './modules/missionaries/missionaries.module';
 import { ResultsComponent } from './modules/missionaries/components/results/results.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SearchService } from './service/search.service';
->>>>>>> dev
 
 @NgModule({
   declarations: [
