@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Missionary } from '../../../../models/missionary';
-import { SearchService } from '../../../../service/search.service';
+import { SearchService } from '../../../../services/search.service';
 
 @Component({
   selector: 'app-results',

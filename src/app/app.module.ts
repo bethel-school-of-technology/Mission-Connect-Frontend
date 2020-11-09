@@ -10,7 +10,7 @@ import { MissionaryConfigComponent } from './missionary-config/missionary-config
 import { HomeComponent } from './home/home.component';
 import { StatementComponent } from './statement/statement.component';
 import { MissionariesModule } from './modules/missionaries/missionaries.module';
-import { SearchService } from './service/search.service';
+import { SearchService } from './services/search.service';
 import { ResultsComponent } from './modules/missionaries/components/results/results.component';
 
 @NgModule({

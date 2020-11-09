@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Missionary } from '../../../../models/missionary';
-import { SearchService } from '../../../../service/search.service';
+import { SearchService } from '../../../../services/search.service';
 
 
 @Component({
