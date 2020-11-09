@@ -22,4 +22,4 @@ describe('MissionaryComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
+});m
