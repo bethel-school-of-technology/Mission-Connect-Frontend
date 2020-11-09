@@ -16,13 +16,13 @@ export class MissionaryComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
               private searchService: SearchService) { }
-
+  getMissionary(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    console.log(id);
+    this.searchService.getMissionary(id).subscribe (missionary => {this.missionary = missionary;   console.log(missionary)});
+    }
   ngOnInit(): void {
-    this.getHero();
+    this.getMissionary();
   }
-getHero(): void {
-  const id = +this.route.snapshot.paramMap.get('id');
-  console.log(id);
-  this.searchService.getMissionary(id).subscribe(missionary => this.missionary = missionary);
-  console.log(this.missionary);}
+  
 }
