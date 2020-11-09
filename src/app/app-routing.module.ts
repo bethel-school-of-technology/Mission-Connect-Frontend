@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { MissionaryDbComponent } from './modules/missionaries/components/missionary-db/missionary-db.component';
 import { StatementComponent } from './statement/statement.component';
 import { ResultsComponent } from './modules/missionaries/components/results/results.component';
-import { LoginComponent } from './login/login.component'
+
 
 const routes: Routes = [
   { 
@@ -36,10 +36,10 @@ const routes: Routes = [
   //   path: 'signup',
   //   component: 'SignupComponent'
   // },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
+  // {
+  //   path: 'login',
+  //   component: 'LoginComponent'
+  // },
   {
     path: 'addnew',
     component: MissionaryConfigComponent
