@@ -22,6 +22,6 @@ export class SearchService {
       return this.http.get<Missionary[]>(this.searchRoute);
     }
     getMissionary(id: number): Observable<Missionary>{
-      return this.http.get<Missionary>(this.missionaryRoute + id)
+      return this.http.get<Missionary>(this.missionaryRoute + id);
     }
 }

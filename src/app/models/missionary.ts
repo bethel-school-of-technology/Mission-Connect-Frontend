@@ -4,5 +4,6 @@ export class Missionary {
   name: string;
   bio: string;
   continent: string;
-  country: string; 
+  country: string;
+  email: string; 
 }
