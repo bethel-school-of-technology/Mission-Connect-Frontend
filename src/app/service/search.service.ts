@@ -18,10 +18,11 @@ export class SearchService {
     getMissionaries(): Observable<Missionary[]>{
       return this.http.get<Missionary[]>(this.missionariesRoute);
       }
-    searchMissionaries(): Observable<Missionary[]>{
-      return this.http.get<Missionary[]>(this.searchRoute);
+    searchMissionaries(name: string, continent: string, country: string): Observable<any>{
+      return this.http.get<Missionary[]>(this.searchRoute+"?name="+name+
+      "&continent="+continent+"&country="+country);
     }
-    getMissionary(id: number): Observable<Missionary>{
+    getMissionary(id: number): Observable<any>{
       return this.http.get<Missionary>(this.missionaryRoute + id);
     }
 }

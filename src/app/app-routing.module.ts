@@ -32,6 +32,14 @@ const routes: Routes = [
     path: 'missionary/:id',
     component: MissionaryComponent
   },
+  // {
+  //   path: 'signup',
+  //   component: 'SignupComponent'
+  // },
+  // {
+  //   path: 'login',
+  //   component: 'LoginComponent'
+  // },
   {
     path: 'addnew',
     component: MissionaryConfigComponent

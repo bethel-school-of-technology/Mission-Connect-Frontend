@@ -1,30 +1,29 @@
 <div class="container-fluid m-0 p-0">
   <div class="row d-flex justify-content-between m-1">
     <div class="col-xs-12 col-sm-5 pt-5">
-      <form [formGroup]="searchForm" (ngSubmit)="onSubmit()" class="search p-2">
+      <form name="searchForm" method="get"class="search p-2 form-group">
         <input
           type="text"
           class="searchInput d-flex form-control"
           id="name"
           name="name"
-          formControlName="name"
           placeholder="Search by Missionary or Ministry"
         />
-        <select class="d-flex form-control" formControlName="continent" name="continent" id="continents">
-          <option [ngValue]="null" disabled>
+        <select class="d-flex form-control"  name="continent" id="continents">
+          <option value="null" selected disabled>
             Select Continent
           </option>
-          <option *ngFor="let continent of continents" [ngValue]="continent.name">{{continent.name}}</option>
+          <option *ngFor="let continent of continents" value="{{continent.name}}">{{continent.name}}</option>
         </select>
-        <select class="d-flex form-control" formControlName="country" name="country" id="countries">
-          <option [ngValue]="null" disabled>
+        <select class="d-flex form-control"  name="country" id="countries">
+          <option value="null" selected disabled>
             Select a Country
           </option>
-          <option *ngFor="let country of countries" [ngValue]="country.name">{{country.name}}</option>
+          <option *ngFor="let country of countries" value="{{country.name}}">{{country.name}}</option>
           
         </select>
         <div class="d-flex justify-content-center">
-          <button type="submit" class="btn btn-secondary col-4">
+          <button type="submit" class="btn btn-secondary col-4" routerLink="/results">
             Search
           </button>
         </div>

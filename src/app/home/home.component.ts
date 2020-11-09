@@ -273,33 +273,33 @@ export class HomeComponent implements OnInit {
     {name: 'Zambia'},
     {name: 'Zimbabwe'}
   ]
-
-  constructor(private fb: FormBuilder, private searchService: SearchService) {
-    this.searchForm = new FormGroup({
-      name: new FormControl(),
-      continent: new FormControl(),
-      country: new FormControl()
-    });
+// private fb: FormBuilder,
+  constructor( private searchService: SearchService) {
+    // this.searchForm = new FormGroup({
+    //   name: new FormControl(),
+    //   continent: new FormControl(),
+    //   country: new FormControl()
+    // });
   }
 
-  searchMissionaries() {
-    this.searchService.searchMissionaries()
-    .subscribe(missionaries => {
-      this.missionaries = missionaries}
-    );
-  }
+  // searchMissionaries() {
+  //   this.searchService.searchMissionaries()
+  //   .subscribe(missionaries => {
+  //     this.missionaries = missionaries}
+  //   );
+  // }
 
   ngOnInit(): void {
-    this.searchForm = this.fb.group({
-      name: [null],
-      continent: [null],
-      country: [null]
-    })
+    // this.searchForm = this.fb.group({
+    //   name: [null],
+    //   continent: [null],
+    //   country: [null]
+    // })
     
   }
 
   onSubmit(): void {
-    console.log(this.searchForm.value);
+    // console.log(this.searchForm.value);
   }
 }
 
