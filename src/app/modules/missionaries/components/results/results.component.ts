@@ -21,11 +21,7 @@ export class ResultsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //  this.route.queryParams
-    //   .filter(missionaries => missionaries)
-    //   .subscribe(params => {
-    //     console.log(params;)
-    //   });
+     
   }
 
 }
