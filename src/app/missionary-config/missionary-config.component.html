@@ -1,4 +1,21 @@
 <div>
     <h3>Add a New Missionary: </h3>
-    <p>Click here to add a new missionary profile</p>
 </div>
+<form (ngSubmit) = "addNew()">
+    <label>Name: </label>
+    <input type="text" name="name" [(ngModel)] = "newMissionary.name">
+    <br>
+    <label>Continent: </label>
+    <input type="text" name="continent" [(ngModel)] = "newMissionary.continent">
+    <br>
+    <label>Email: </label>
+    <input type="text" name="Email" [(ngModel)] = "newMissionary.email">
+    <br>
+    <label>Country: </label>
+    <input type="text" name="country" [(ngModel)] = "newMissionary.country">
+    <br>
+    <label>Bio: </label>
+    <textarea type="bio" name="bio" [(ngModel)] = "newMissionary.bio" ></textarea> 
+    <br>
+    <button type="submit">Add</button>
+</form>
