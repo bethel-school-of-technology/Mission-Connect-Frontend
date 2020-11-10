@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { Missionary } from '../models/missionary';
-import { SearchService } from '../services/search.service'
+import { SearchService } from '../service/search.service'
 
 
 @Component({
