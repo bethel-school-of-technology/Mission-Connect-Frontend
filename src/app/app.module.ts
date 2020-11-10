@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MissionaryComponent } from './missionary/missionary.component';
@@ -11,6 +12,7 @@ import { StatementComponent } from './statement/statement.component';
 import { MissionariesModule } from './modules/missionaries/missionaries.module';
 import { SearchService } from './service/search.service';
 import { ResultsComponent } from './modules/missionaries/components/results/results.component';
+import { SignupService } from './services/signup.service';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,10 @@ import { ResultsComponent } from './modules/missionaries/components/results/resu
     BrowserModule,
     AppRoutingModule,
     MissionariesModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [SearchService],
+  providers: [SearchService, SignupService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

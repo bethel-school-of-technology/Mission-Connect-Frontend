@@ -19,7 +19,7 @@ export class MissionaryComponent implements OnInit {
   getMissionary(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     console.log(id);
-    this.searchService.getMissionary(id).subscribe (missionary => {this.missionary = missionary.missionary;   console.log(missionary)});
+    this.searchService.getMissionary(id).subscribe (missionary => {this.missionary = missionary;   console.log(missionary)});
     }
   ngOnInit(): void {
     this.getMissionary();
