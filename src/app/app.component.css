@@ -25,10 +25,8 @@
 
 .btn {
   color: #fff;
-  background-color: #56260f;
-  margin-right: 1em;
+  /* float: right; */
 }
-
 
 
 .searchInput,
