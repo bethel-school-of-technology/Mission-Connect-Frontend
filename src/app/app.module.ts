@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MissionaryComponent } from './missionary/missionary.component';
@@ -26,8 +25,7 @@ import { ResultsComponent } from './modules/missionaries/components/results/resu
     BrowserModule,
     AppRoutingModule,
     MissionariesModule,
-    HttpClientModule,
-    FormsModule
+    HttpClientModule
   ],
   providers: [SearchService],
   bootstrap: [AppComponent]
