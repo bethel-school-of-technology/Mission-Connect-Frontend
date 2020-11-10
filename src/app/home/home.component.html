@@ -1,0 +1,40 @@
+<div class="container-fluid m-0 p-0">
+  <div class="row d-flex justify-content-between m-1">
+    <div class="col-xs-12 col-sm-5 pt-5">
+      <form name="searchForm" method="GET" class="search p-2 form-group">
+        <input
+          type="text"
+          class="searchInput d-flex form-control"
+          id="name"
+          name="name"
+          placeholder="Search by Missionary or Ministry"
+        />
+        <select class="d-flex form-control"  name="continent" id="continents">
+          <option value="null" selected disabled>
+            Select Continent
+          </option>
+          <option *ngFor="let continent of continents" value="{{continent}}">{{continent}}</option>
+        </select>
+        <select class="d-flex form-control"  name="country" id="countries">
+          <option value="null" selected disabled>
+            Select a Country
+          </option>
+          <option *ngFor="let country of countries" value="{{country}}">{{country}}</option>
+          
+        </select>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-secondary col-4" routerLink="/results" >
+            Search
+          </button>
+        </div>
+      </form>
+      <div class="col pt-2">
+        <a class="pt-sm-1 pt-md-3" routerLink="database">View Full Directory</a>
+      </div>
+    </div>
+    <div class="col col-sm-6 offset-sm-1 d-flex pt-5 text-center">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div> 
+

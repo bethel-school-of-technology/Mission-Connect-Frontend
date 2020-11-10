@@ -1,0 +1,9 @@
+<div class="col d-flex flex-wrap justify-content-between">
+  <div class="col-sm-6 col-lg-4" *ngFor='let missionary of missionaries'>
+    <a href="missionary/{{missionary._id}}">
+      <img src={{missionary.profilePic}}>
+      <p class="mb-0"><strong>{{missionary.name}}</strong></p>
+      <p>{{missionary.country}}</p>
+    </a>
+  </div>
+</div>

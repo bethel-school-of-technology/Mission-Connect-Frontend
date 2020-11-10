@@ -1,0 +1,9 @@
+img {
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+.btn {
+  background-color: #956752;
+  color: #fff;
+}
